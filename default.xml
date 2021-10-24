@@ -14,6 +14,10 @@
 
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
+           
+  <remote  name="roy"
+           fetch="https://github.com/Roy-rom"
+           revision="refs/heads/12" />          
 
   <remote  name="arrow"
            fetch="https://github.com/ArrowOS"
@@ -1124,8 +1128,9 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- ArrowOS changes -->
+    <!-- Subtree Manifest -->
   <include name="remove.xml" />
-  <include name="arrow.xml" />
+  <include name="snippets/roy.xml" />
+  <include name="snippets/arrow.xml" />
 
 </manifest>

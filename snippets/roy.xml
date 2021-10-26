@@ -11,6 +11,10 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="roy" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   
   <!-- framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="roy" />
@@ -23,6 +27,6 @@
  
  <!-- vendor repos -->
   <project path="vendor/roy" name="android_vendor_roy" remote="roy" />
-  
+  <project path="vendor/support" name="android_vendor_support" remote="roy" />
   </manifest>
  
